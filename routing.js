@@ -9,9 +9,9 @@ const processRequest = (req, res) => {
     switch (method) {
         case 'GET':
             switch (url) {
-                case '/bunny-girl/fuataba':
+                case '/bunny-girl/futaba':
                     res.setHeader(
-                        'Content-Type', 'aplication/json; charset=utf-8');
+                        'Content-Type', 'application/json; charset=utf-8');
                     return res.end(JSON.stringify(futabaJSON))
                 default:
                     res.statusCode = 404;
@@ -20,8 +20,9 @@ const processRequest = (req, res) => {
             }
         case 'POST':
             switch (url) {
-                case '/bunny-girl/':
-                let body = '';
+                case '/bunny-girl/': {
+                    let body = '';
+                }
             }
     }
 }
