@@ -1,0 +1,31 @@
+{
+    "character": {
+      "name": "Rio Futaba",
+      "age": 16,
+      "occupation": "Estudiante de secundaria",
+      "appearance": {
+        "hair_color": "Castaño claro",
+        "eye_color": "Marrón",
+        "notable_traits": [
+          "Lleva gafas",
+          "Siempre viste el uniforme escolar"
+        ]
+      },
+      "background": {
+        "role": "Amiga y compañera de clase de Sakuta Azusagawa",
+        "interest": "Ciencia y el Síndrome de la Pubertad",
+        "personality": "Inteligente, seria y algo sarcástica"
+      },
+      "notable_story_points": [
+        "Investigadora sobre el Síndrome de la Pubertad",
+        "Protagoniza un arco importante en la serie relacionado con un fenómeno de duplicación"
+      ],
+      "relationships": {
+        "friends": [
+          "Sakuta Azusagawa",
+          "Mai Sakurajima"
+        ]
+      }
+    }
+  }
+  
