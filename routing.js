@@ -20,9 +20,23 @@ const processRequest = (req, res) => {
             }
         case 'POST':
             switch (url) {
-                case '/bunny-girl/': {
-                    let body = '';
+                case '/bunny-girl': {
+                    let body = ''
+                    //Escuchar el evento data
+                    req.on('data', chunk => {
+                        body += chunk.toString();
+                    })
+                    req.on('end', () => {
+                        const data = JSON.parse(body);
+                        res.writeHead(201, { 'Content-Type': 'application/json; charset=utf-8' })
+                        res.end(JSON.stringify(data));
+                    })
+                    break;
                 }
+                default:
+                    res.statusCode = 404;
+                    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+                    return res.end('404 Not Found');
             }
     }
 }

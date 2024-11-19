@@ -1,3 +1,62 @@
+### Recuperar información del personaje futaba
 GET http://localhost:1234/bunny-girl/futaba
 
+### Para crear un nuevo personaje
 POST http://localhost:1234/bunny-girl
+Content-Type: application/json
+
+{
+  "character": {
+    "name": "Mai Sakurajima",
+    "age": 17,
+    "occupation": "Estudiante de secundaria y actriz retirada",
+    "appearance": {
+      "hair_color": "Negro",
+      "eye_color": "Púrpura oscuro",
+      "height": "165 cm",
+      "notable_traits": [
+        "Suele llevar un uniforme escolar con orejas de conejo (en ciertos eventos promocionales)",
+        "Elegante y madura en su estilo"
+      ]
+    },
+    "background": {
+      "role": "Heroína principal de Seishun Buta Yarou",
+      "introduction": "Es encontrada vistiendo un traje de conejita mientras deambula por la biblioteca, siendo ignorada por todos excepto Sakuta Azusagawa.",
+      "condition": "Sufre del Síndrome de la Pubertad, que causa su invisibilidad hacia otras personas debido a la presión social y su retiro de la actuación."
+    },
+    "personality": "Mai es inteligente, directa, y tiene un sentido del humor sarcástico. Sin embargo, también es amable y emocionalmente sensible.",
+    "relationships": {
+      "sakuta_azusagawa": {
+        "relationship_type": "Pareja",
+        "description": "Mai y Sakuta tienen una relación romántica y se apoyan mutuamente en los desafíos que enfrentan, especialmente los relacionados con el Síndrome de la Pubertad."
+      },
+      "family": [
+        {
+          "name": "Madre de Mai",
+          "relationship": "Distante",
+          "description": "La relación se complica por la presión que Mai experimentó durante su carrera como actriz."
+        }
+      ]
+    },
+    "notable_story_points": [
+      "Su invisibilidad inicial lleva a que Sakuta investigue el Síndrome de la Pubertad.",
+      "Desarrolla una relación significativa con Sakuta mientras enfrentan juntos otros casos del Síndrome."
+    ],
+    "media_appearances": {
+      "novel": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai (Volumen 1 y otros)",
+      "anime": "Aparece como protagonista en la serie de 2018.",
+      "movies": [
+        "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai (2019)",
+        "Seishun Buta Yarou wa Odekake Sister no Yume o Minai (2023)"
+      ]
+    }
+  },
+  "links": {
+    "wiki_page": "https://seishunbutayarou.fandom.com/es/wiki/Mai_Sakurajima",
+    "related_pages": [
+      "https://seishunbutayarou.fandom.com/es/wiki/Sakuta_Azusagawa",
+      "https://seishunbutayarou.fandom.com/es/wiki/S%C3%ADndrome_de_la_Pubertad"
+    ]
+  }
+}
+
