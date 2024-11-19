@@ -6,6 +6,7 @@
   "scripts": {
     "dev:1": "nodemon http.js",
     "dev:2": "nodemon routing.js",
+    "dev:3": "nodemon --watch express.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +21,8 @@
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "dependencies": {
+    "express": "4.21.1"
   }
 }
